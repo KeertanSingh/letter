@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 35 30% 94%;
+    --foreground: 25 30% 18%;
+
+    --card: 38 35% 92%;
+    --card-foreground: 25 30% 18%;
+
+    --popover: 38 35% 92%;
+    --popover-foreground: 25 30% 18%;
+
+    --primary: 0 55% 45%;
+    --primary-foreground: 38 40% 96%;
+
+    --secondary: 35 40% 85%;
+    --secondary-foreground: 25 30% 18%;
+
+    --muted: 35 25% 88%;
+    --muted-foreground: 25 15% 45%;
+
+    --accent: 42 70% 55%;
+    --accent-foreground: 25 30% 12%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 25% 80%;
+    --input: 30 25% 80%;
+    --ring: 0 55% 45%;
+
+    --radius: 0.5rem;
+
+    /* Custom romantic tokens */
+    --parchment: 38 40% 93%;
+    --parchment-dark: 35 30% 85%;
+    --gold: 42 80% 55%;
+    --gold-glow: 42 90% 65%;
+    --rose: 0 55% 45%;
+    --rose-light: 0 50% 70%;
+    --rose-petal: 350 60% 65%;
+    --ink: 25 40% 20%;
+    --ink-light: 25 20% 40%;
+    --candlelight: 40 95% 70%;
+    --envelope: 30 40% 72%;
+    --envelope-dark: 28 35% 55%;
+    --envelope-inner: 38 45% 90%;
+
+    --font-script: 'Dancing Script', cursive;
+    --font-serif: 'Playfair Display', serif;
+    --font-body: 'Cormorant Garamond', serif;
+
+    --shadow-warm: 0 4px 20px hsl(30 40% 30% / 0.15);
+    --shadow-glow: 0 0 40px hsl(42 80% 55% / 0.3);
+    --shadow-deep: 0 10px 40px hsl(25 30% 15% / 0.25);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+    overflow-x: hidden;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-15px) rotate(3deg); }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes shimmer {
+  0% { opacity: 0.5; }
+  50% { opacity: 1; }
+  100% { opacity: 0.5; }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { text-shadow: 0 0 10px hsl(42 80% 55% / 0.3), 0 0 20px hsl(42 80% 55% / 0.1); }
+  50% { text-shadow: 0 0 20px hsl(42 80% 55% / 0.6), 0 0 40px hsl(42 80% 55% / 0.3), 0 0 60px hsl(42 80% 55% / 0.1); }
+}
+
+@keyframes fall {
+  0% { transform: translateY(-10vh) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+
+@keyframes heart-float {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-100px) scale(0.5); opacity: 0; }
+}
+
+@keyframes envelope-open {
+  0% { transform: rotateX(0deg); }
+  100% { transform: rotateX(180deg); }
+}
+
+@keyframes letter-rise {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-60%); }
+}
+
+@keyframes dust-float {
+  0% { transform: translateY(0) translateX(0); opacity: 0; }
+  20% { opacity: 0.6; }
+  80% { opacity: 0.4; }
+  100% { transform: translateY(-200px) translateX(50px); opacity: 0; }
+}
+
+@keyframes candle-flicker {
+  0%, 100% { opacity: 0.8; transform: scale(1); }
+  25% { opacity: 1; transform: scale(1.02); }
+  50% { opacity: 0.7; transform: scale(0.98); }
+  75% { opacity: 0.9; transform: scale(1.01); }
+}
+
+@keyframes fade-in-up {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes write-in {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.animate-float { animation: float 6s ease-in-out infinite; }
+.animate-float-slow { animation: float-slow 8s ease-in-out infinite; }
+.animate-shimmer { animation: shimmer 3s ease-in-out infinite; }
+.animate-glow-pulse { animation: glow-pulse 3s ease-in-out infinite; }
+.animate-candle-flicker { animation: candle-flicker 2s ease-in-out infinite; }
+.animate-fade-in-up { animation: fade-in-up 0.8s ease-out forwards; }
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(var(--parchment));
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--envelope));
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--envelope-dark));
+}
