@@ -29,7 +29,7 @@ Don't ever overthink. I'm all yours. Completely in love with you. And I'm actual
 
 I love you. I'm always going to love you — to the end of my days and beyond.
 
-And even if life ever becomes complicated… even if something ever stands between us… I will still want you. And if for some reason we are not together, allow me to love you without expectations. Allow me to love you unconditionally. In ways never heard before. Because you are that one person from billions where my heart decided to stay.
+And even if life ever becomes complicated… even if something ever stands between us… I will still want you. And if for some reason we are not together, allow me to love you without expectations. Allow me to love you unconditionally. In ways you never heard before. Because you are that one person from billions where my heart decided to stay.
 
 You once might feel like you're hard to love. But let me make love easy for you. You are lovable even in this version of yourself. You don't need to be perfect to be loved. You already deserve love. And I will love you — at your best, at your worst, when you feel heavy, when you overthink. You will never face anything alone. As long as you allow me, I'll stand beside you.
 
@@ -40,7 +40,6 @@ I love you very much.
 I miss you.
 I will wait for the life we imagine.
 Don't forget this.
-And please… don't forget me.
 
 For as long as you'll have me, I will love you every single day and night.
 
